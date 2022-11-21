@@ -18,3 +18,7 @@ AH00558: httpd: Could not reliably determine the server's fully qualified domain
 [Thu Nov 17 09:43:58.435803 2022] [core:warn] [pid 8084:tid 139744979710720] AH00098: pid file /home/user/.config/Local/run/RwQfKSFB0/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
 [Thu Nov 17 09:43:58.437020 2022] [mpm_event:notice] [pid 8084:tid 139744979710720] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
 [Thu Nov 17 09:43:58.437054 2022] [core:notice] [pid 8084:tid 139744979710720] AH00094: Command line: '/home/user/.config/Local/lightning-services/apache-2.4.43+8/bin/linux/bin/httpd -D FOREGROUND -f /home/user/.config/Local/run/RwQfKSFB0/conf/apache/apache2.conf'
+[Mon Nov 21 10:33:14.398794 2022] [mpm_event:notice] [pid 8084:tid 139744979710720] AH00491: caught SIGTERM, shutting down
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 21 10:33:59.820693 2022] [mpm_event:notice] [pid 161144:tid 140228014166784] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
+[Mon Nov 21 10:33:59.820928 2022] [core:notice] [pid 161144:tid 140228014166784] AH00094: Command line: '/home/user/.config/Local/lightning-services/apache-2.4.43+8/bin/linux/bin/httpd -D FOREGROUND -f /home/user/.config/Local/run/RwQfKSFB0/conf/apache/apache2.conf'

@@ -1,5 +1,5 @@
-<h3><?php echo ( !empty($content) ) ? esc_html($content) : esc_html(MV_Slider_Settings::$options['mv_slider_title']); ?></h3>
-<div class="mv-slider flexslider ">
+<h3><?php echo ( !empty($content) ) ? esc_html($content) : esc_html(MV_Slider_Settings::$options['mv_slider_title']);?></h3>
+<div class="mv-slider flexslider <?php echo ( isset( MV_Slider_Settings::$options['mv_slider_style'])) ? MV_Slider_Settings::$options['mv_slider_style'] : 'style-1';?>">
     <ul class="slides">
         <?php
         $args = array(
@@ -18,7 +18,15 @@
 
         ?>
         <li>
-        <?php the_post_thumbnail( 'full', array('class' => 'img-fluid') ); ?>
+        <?php
+        if( has_post_thumbnail()){
+    the_post_thumbnail( 'full', array('class' => 'img-fluid') ); 
+    }else{
+        echo mv_slier_get_palceholder_image;
+    }
+    ?>
+         
+        
             <div class="mvs-container">
                 <div class="slider-details-container">
                     <div class="wrapper">

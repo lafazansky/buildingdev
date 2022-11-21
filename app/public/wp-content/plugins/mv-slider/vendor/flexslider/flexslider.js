@@ -4,6 +4,6 @@ jQuery(window).load(function(){
         touch: true,
         directionNav: false,
         smootHeight: true,
-        controlNav: true,
+        controlNav: SLIDER_OPTIONS.controlNav,
     });
 });
